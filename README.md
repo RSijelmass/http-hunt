@@ -40,12 +40,22 @@ pretty, but it can be helpful. For example, it is very easy to see what status
 code is attached to each request.
 
 We can mock typing into the browser by using the program `curl`. cURL stands
-for Client URL, so that makes sense.
+for Client URL, so that makes sense considering we are the client that makes
+a request to the server for information.
 
 Because we are not connected to the internet, we use something called
 `localhost`. You can see it as your computer's own, local version of the
 internet. 
-So, to go to the homepage of this project you can type in:
+
+You can see this, if the server is running, on any browser. Type in
+`localhost:3000` on your browser. What do you see? 
+
+It's our very basic app! To see this homepage in your terminal, you can type in:
 ```
 curl localhost:3000
+```
+
+All clues are hidden under `localhost:3000/clues`. To get started with the scavenger hunt for clues, you can make your first GET request by getting `first-clue` like so:
+```
+curl localhost:3000/first-clue
 ```
