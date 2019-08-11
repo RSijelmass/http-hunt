@@ -57,5 +57,7 @@ curl localhost:3000
 
 All clues are hidden under `localhost:3000/clues`. To get started with the scavenger hunt for clues, you can make your first GET request by getting `first-clue` like so:
 ```
-curl localhost:3000/first-clue
+curl localhost:3000/clues/first-clue
 ```
+
+To read the clue, make sure to read what is within the `<body>` tags.
